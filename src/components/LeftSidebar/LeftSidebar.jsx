@@ -6,7 +6,7 @@ const LeftSidebar = () => {
   return (
     <div className='left-sidebar'>
       <nav className="side-nav">
-        <NavLink to='/' className='side-nav-links' activeclassName='active'>
+        <NavLink to='/' className='side-nav-links' activeclassname='active'>
           <p>Home</p>
         </NavLink>
         <div className="side-nav-div">
@@ -16,10 +16,10 @@ const LeftSidebar = () => {
           <img src={Globe} height='20px'width='20px' alt="Globe" />
           <p style={{paddingLeft:"10px"}}> Questions</p>
         </NavLink>
-        <NavLink to='/Tags' className='side-nav-links' activeclassName='active' style={{paddingLeft:'40px'}}>
+        <NavLink to='/Tags' className='side-nav-links' activeclassname='active' style={{paddingLeft:'40px'}}>
           <p>Tags</p>
         </NavLink>
-        <NavLink to='/Users' className='side-nav-links' activeclassName='active' style={{paddingLeft:'40px'}}>
+        <NavLink to='/Users' className='side-nav-links' activeclassname='active' style={{paddingLeft:'40px'}}>
           <p>Users</p>
         </NavLink>
       </nav>

@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link,useLocation} from 'react-router-dom'
 import './HomeMainbar.css'
+// import QuestionList from './QuesionList'
+import QuestionList from './QuestionList'
 
 const HomeMainbar = () => {
   var questionsList = [{
@@ -11,7 +13,7 @@ const HomeMainbar = () => {
     questionBody : "It meant to be",
     questionTags : ["java","node js","react js","mongo db"],
     userPosted : "mano",
-    time: "jan 1"
+    askedOn:  "jan 1"
   },
   {
     id:2,
@@ -21,7 +23,7 @@ const HomeMainbar = () => {
     questionBody : "It meant to be",
     questionTags : ["java","node js","react js","mongo db"],
     userPosted : "mano",
-    time: "jan 1"
+    askedOn: "jan 1"
   },
   {
     id:3,
@@ -31,7 +33,7 @@ const HomeMainbar = () => {
     questionBody : "It meant to be",
     questionTags : ["javascript","R","python"],
     userPosted : "mano",
-    time: "jan 1"
+    askedOn: "jan 1"
   },
 ]
   const location = useLocation()
@@ -48,6 +50,7 @@ const HomeMainbar = () => {
           questionsList === null? <h1>Loading...</h1> :
           <>
               <p>{questionsList.length} questions</p>
+              <QuestionList questionsList={questionsList} />
           </>
         }
       </div>
